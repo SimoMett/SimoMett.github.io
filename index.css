@@ -7,6 +7,8 @@ body {
 
 .container {
     max-width: 800px; /* Larghezza massima della pagina */
+    margin-right: 150px;
+    margin-left: 150px;
     margin: 0 auto; /* Centra il contenitore */
     line-height: 1.9;
 }

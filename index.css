@@ -1,0 +1,5 @@
+.container {
+    max-width: 800px; /* Larghezza massima della pagina */
+    margin: 0 auto; /* Centra il contenitore */
+    padding: 20px; /* Spazio interno */
+}

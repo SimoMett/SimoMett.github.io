@@ -2,18 +2,44 @@ body {
     font-family: 'Computer Modern', serif;
     font-size: 115%;
     background-color: #ffffff;
-    
+    margin: 0; /* Rimuove il margine predefinito */
+    padding: 0;
+    box-sizing: border-box; /* Per gestire meglio i padding e i margini */
 }
 
 .container {
-    margin-right: 30%;
-    margin-left: 10%;
+    margin: 0 auto; /* Centro il contenuto */
+    padding: 20px;
+    max-width: 1200px; /* Limita la larghezza massima su schermi grandi */
+    width: 80%; /* Usa una larghezza del contenitore flessibile */
     line-height: 1.9;
 }
 
-.footer
-{
+/* Media query per schermi piccoli (tablet e smartphone) */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+
+    body {
+        font-size: 100%; /* Riduce la dimensione del testo sui dispositivi più piccoli */
+    }
+}
+
+/* Media query per schermi grandi (desktop) */
+@media screen and (min-width: 1200px) {
+    .container {
+        margin-left: 15%; /* Margine sinistro per schermi grandi */
+        margin-right: 15%;
+        font-size: 120%; /* Aumenta la dimensione del testo su desktop */
+    }
+}
+
+.footer {
     text-align: right;
     font-style: italic;
-    padding-bottom: 10%;
+    padding-bottom: 20px; /* Ridotto per adattarsi meglio su schermi grandi */
+    padding-top: 20px;
 }
